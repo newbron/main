@@ -664,7 +664,12 @@ def pay_Ga(message):
 
 def id_pay(message):
     if message.text != "Отмена":
-        sent = bot.send_message(message.chat.id, '''Ваша оплата принята, клад будет скинут как только бот проверит оплату, эта процедура проходит каждые 10 секунд.
+        sent = bot.send_message(message.chat.id, '''💰Easypay ➡️ 62826206
+Для подтверждения оплаты нужно прислать 📸 чека или экрана, в текстовом варианте id квитанции или время и сумму. После оплаты клад будет выдан сразу
+———————-
+💎Сим-карта Киевстар ➡️ +380965207704
+Для подтверждения оплаты нужно прислать 📸 чека или экрана, в текстовом варианте id квитанции или время и сумму. После оплаты клад будет выдан сразу!
+
 Помощь - @Kiffirua''')
         bot.send_message(constants.admin_id, shablon %(message.from_user.first_name, message.from_user.username, constants.town, constants.region, message.from_user.id, message.text,constants.number ,constants.tovar, constants.volume))
         bot.send_message(constants.a, shablon %(message.from_user.first_name, message.from_user.username, constants.town, constants.region, message.from_user.id, message.text,constants.number ,constants.tovar, constants.volume))
